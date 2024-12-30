@@ -1,0 +1,9 @@
+<%= button_to "Generate a new number", nums_path, method: :post %>
+<hr/>
+<%= button_to "Delete all numbers", destroy_all_nums_path, method: :delete %>
+<hr/>
+
+
+<% @num.each do |num| %>
+  <p><%= num.num %></p>
+<% end %>
