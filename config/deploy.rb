@@ -3,6 +3,7 @@ lock "~> 3.19.2"
 
 set :application, "random_app"
 set :repo_url, "git@github.com:QuietSup/random_app.git"
+set :keep_releases, 2
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
