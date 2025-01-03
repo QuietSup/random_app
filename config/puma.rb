@@ -40,4 +40,4 @@ plugin :solid_queue if ENV["SOLID_QUEUE_IN_PUMA"]
 # In other environments, only set the PID file if requested.
 pidfile ENV["PIDFILE"] if ENV["PIDFILE"]
 
-bind "unix://home/deploy/random_app/shared/tmp/sockets/puma.sock" if ENV["RAILS_ENV"] == "production"
+bind "unix:///home/deploy/random_app/shared/tmp/sockets/puma.sock" if ENV["RAILS_ENV"] == "production"
